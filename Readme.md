@@ -33,10 +33,11 @@ The site presents Amulya Agarwal’s expertise in video production, editing, gra
 
 ## 🛠️ Tools & Technologies Used
 
-- 💻 HTML5 / CSS3
-- 💻 JavaScript
-- ⚛️ [React/Vue/Other] *(Update if used)*
-- 🖥️ Adobe Premiere Pro, After Effects, Final Cut Pro, DaVinci Resolve, Avid Media Composer
+- 🖥️ HTML5 / CSS3
+- 🧑‍💻 JavaScript
+- 🧳 Git & GitHub
+- 🚀 Netlify
+- 🔎 Google Search Console
 
 ---
 
