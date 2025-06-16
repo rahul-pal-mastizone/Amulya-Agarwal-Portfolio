@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Portfolio - Shorts & Reels</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500;800&display=swap" rel="stylesheet">
+  <style>
+    /* --- Use the same CSS as above --- */
+    body { background: #f7f8fa; font-family: 'Raleway', Arial, sans-serif; color: #242424; margin: 0; padding: 0;}
+    .main-container { max-width: 1200px; margin: 0 auto; padding: 30px 20px 50px 20px;}
+    .header-title { text-align: center; margin-top: 28px; }
+    .header-title h3 { font-size: 2.3rem; font-weight: 800; color: #cf2626; margin-bottom: 4px; letter-spacing: 1.2px; }
+    .header-title h2 { font-size: 1.35rem; color: #4c4c4c; margin-bottom: 12px; font-weight: 500; letter-spacing: 1px; }
+    .header-title .underline { width: 64px; height: 3px; background: #cf2626; margin: 13px auto 0 auto; border-radius: 2px; }
+    .portfolio-tabs { display: flex; justify-content: center; gap: 16px; margin: 40px 0 48px 0; }
+    .portfolio-tabs a, .portfolio-tabs span { padding: 9px 26px; border-radius: 24px; background: #fff; color: #cf2626; font-weight: 600; border: 2px solid #cf2626; transition: background .17s, color .17s, border-color .17s; text-decoration: none; font-size: 1rem; box-shadow: 0 2px 16px rgba(0,0,0,0.04); cursor: pointer; position: relative; letter-spacing: .5px; outline: none; display: inline-block; }
+    .portfolio-tabs .active, .portfolio-tabs a.active { background: #cf2626; color: #fff; border-color: #cf2626; cursor: default; box-shadow: 0 2px 16px rgba(207,38,38,0.06); }
+    .portfolio-tabs a:hover:not(.active) { background: #ffeaea; color: #cf2626; border-color: #b61924; text-decoration: none; }
+    .portfolio-gallery { display: flex; flex-wrap: wrap; gap: 36px; justify-content: center; padding: 0; margin-bottom: 40px; min-height: 340px;}
+    .portfolio-card { background: #fff; border-radius: 18px; box-shadow: 0 2px 18px rgba(0,0,0,0.10); width: 315px; overflow: hidden; transition: transform .18s, box-shadow .18s; display: flex; flex-direction: column; align-items: stretch; animation: cardPop 0.9s cubic-bezier(.32,1.04,.57,1.09);}
+    @keyframes cardPop { from { opacity: 0; transform: scale(.97) translateY(22px);} to { opacity: 1; transform: scale(1) translateY(0);} }
+    .portfolio-card:hover { transform: translateY(-10px) scale(1.035); box-shadow: 0 8px 32px rgba(0,0,0,0.15);}
+    .portfolio-card img { width: 100%; height: 180px; object-fit: cover; display: block; border-bottom: 1px solid #f2f2f2; background: #e4e4e4;}
+    .portfolio-info { padding: 19px 18px 13px 18px;}
+    .portfolio-info h3 { font-size: 1.08rem; font-weight: 700; color: #cf2626; margin: 0 0 6px 0; letter-spacing: .2px; white-space: normal;}
+    .portfolio-info .portfolio-desc { color: #666; font-size: .97rem; margin-bottom: 7px; min-height: 20px; line-height: 1.4;}
+    .portfolio-info .portfolio-links { margin-top: 10px;}
+    .portfolio-info .portfolio-links a { color: #cf2626; margin-right: 15px; font-size: 1.24em; transition: color .2s; text-decoration: none; display: inline-block; vertical-align: middle;}
+    .portfolio-info .portfolio-links a:last-child { margin-right: 0;}
+    .portfolio-info .portfolio-links a:hover { color: #b61924; transform: scale(1.17);}
+    @media (max-width: 900px) { .portfolio-gallery { gap: 18px; } .portfolio-card { width: 90vw; max-width: 370px; } .main-container { padding: 10px 4vw 40px 4vw; } }
+    @media (max-width: 600px) { .portfolio-gallery { gap: 13px;} .header-title h3 { font-size: 1.3rem; } .portfolio-card { width: 97vw; max-width: 98vw;}}
+  </style>
+</head>
+<body>
+  <div class="main-container">
+    <div class="header-title">
+      <h3>My Portfolio</h3>
+      <h2>Shorts & Reels</h2>
+      <div class="underline"></div>
+    </div>
+    <div class="portfolio-tabs">
+      <a href="graphics.html">Graphics Design</a>
+      <a href="video-editing.html">Video Editing</a>
+      <a href="social-media.html">Social Media</a>
+      <span class="active">Shorts & Reels</span>
+    </div>
+    <div class="portfolio-gallery">
+      <!-- Repeat for each "reels" item -->
+      <div class="portfolio-card">
+        <img src="img/insta_reels_1_cover.jpg" alt="baldoraworld" />
+        <div class="portfolio-info">
+          <h3>baldoraworld</h3>
+          <div class="portfolio-desc">Instagram reel created for @baldoraworld.</div>
+          <div class="portfolio-links">
+            <a href="img/insta_reels_1.jpg" target="_blank"><i class="fa fa-camera"></i></a>
+            <a href="https://www.instagram.com/reel/DC9Xzo2MD0w/?igsh=bjEyZjI0ZGx4dHQy" target="_blank"><i class="fa fa-link"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="portfolio-card">
+        <img src="https://scontent.cdninstagram.com/v/t51.75761-15/502703569_18315900811225478_8514149469053655388_n.jpg?stp=dst-jpg_e15_tt6&_nc_cat=105&ig_cache_key=MzY0NDQyNDUxMTA2NTkyMzE4MQ%3D%3D.3-ccb1-7&ccb=1-7&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjYwMHgxMDY2LnNkciJ9&_nc_ohc=kGgmAt53EYQQ7kNvwFItmvd&_nc_oc=AdkqwIRyBtqwOl00kOBrsVUiECqRc3bOp3Qe8crr4cBGK2jRsoap3DBFbNjDs9YleJI&_nc_ad=z-m&_nc_cid=1214&_nc_zt=23&_nc_ht=scontent.cdninstagram.com&_nc_gid=RSTpKdlUu31QIsboQnL_PA&oh=00_AfOfM6hM5AxEYqpdWSwxcx0eaNRQL23c-AL0cJ05yhxGPA&oe=6855A78C" alt="Masti Zone Paras One133 mall, Noida" />
+        <div class="portfolio-info">
+          <h3>Masti Zone Paras One133 mall, Noida</h3>
+          <div class="portfolio-desc">Instagram reel for Masti Zone Paras One133 mall, Noida.</div>
+          <div class="portfolio-links">
+            <a href="https://scontent.cdninstagram.com/v/t51.75761-15/502703569_18315900811225478_8514149469053655388_n.jpg?stp=dst-jpg_e15_tt6&_nc_cat=105&ig_cache_key=MzY0NDQyNDUxMTA2NTkyMzE4MQ%3D%3D.3-ccb1-7&ccb=1-7&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjYwMHgxMDY2LnNkciJ9&_nc_ohc=kGgmAt53EYQQ7kNvwFItmvd&_nc_oc=AdkqwIRyBtqwOl00kOBrsVUiECqRc3bOp3Qe8crr4cBGK2jRsoap3DBFbNjDs9YleJI&_nc_ad=z-m&_nc_cid=1214&_nc_zt=23&_nc_ht=scontent.cdninstagram.com&_nc_gid=RSTpKdlUu31QIsboQnL_PA&oh=00_AfOfM6hM5AxEYqpdWSwxcx0eaNRQL23c-AL0cJ05yhxGPA&oe=6855A78C" target="_blank"><i class="fa fa-camera"></i></a>
+            <a href="https://www.instagram.com/p/DKTmMioz55t/" target="_blank"><i class="fa fa-link"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="portfolio-card">
+        <img src="https://scontent.cdninstagram.com/v/t51.75761-15/495022668_18312046258230817_4798069175413059452_n.jpg?stp=dst-jpg_e15_tt6&_nc_cat=101&ig_cache_key=MzYyMTkyNTE2MDQwMDAxNzg5OA%3D%3D.3-ccb1-7&ccb=1-7&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjcyMHgxMjgwLnNkciJ9&_nc_ohc=wQkmsga9-20Q7kNvwF07SyE&_nc_oc=Adkdb_DzMezO7bJy1e1aIDZ80EZdhbQDgo-ffjcxn9JM81f8OFrZf_TqsVunbIQGDPw&_nc_ad=z-m&_nc_cid=1214&_nc_zt=23&_nc_ht=scontent.cdninstagram.com&_nc_gid=nVk2BZzSknF9T_h5j31Tug&oh=00_AfN4m_u-6Z5HfSRGP-UxO3Uy_uePOaaTjHK-JPRQXP74vQ&oe=6855AA07" alt="DB_Mall_Inox_Gwalior" />
+        <div class="portfolio-info">
+          <h3>DB_Mall_Inox_Gwalior</h3>
+          <div class="portfolio-desc">Promotional Instagram reel for DB_Mall_Inox_Gwalior.</div>
+          <div class="portfolio-links">
+            <a href="https://scontent.cdninstagram.com/v/t51.75761-15/495022668_18312046258230817_4798069175413059452_n.jpg?stp=dst-jpg_e15_tt6&_nc_cat=101&ig_cache_key=MzYyMTkyNTE2MDQwMDAxNzg5OA%3D%3D.3-ccb1-7&ccb=1-7&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjcyMHgxMjgwLnNkciJ9&_nc_ohc=wQkmsga9-20Q7kNvwF07SyE&_nc_oc=Adkdb_DzMezO7bJy1e1aIDZ80EZdhbQDgo-ffjcxn9JM81f8OFrZf_TqsVunbIQGDPw&_nc_ad=z-m&_nc_cid=1214&_nc_zt=23&_nc_ht=scontent.cdninstagram.com&_nc_gid=nVk2BZzSknF9T_h5j31Tug&oh=00_AfN4m_u-6Z5HfSRGP-UxO3Uy_uePOaaTjHK-JPRQXP74vQ&oe=6855AA07" target="_blank"><i class="fa fa-camera"></i></a>
+            <a href="https://www.instagram.com/reel/DJDqb5csVnq/?igsh=dXgyNGszNHJoamNs" target="_blank"><i class="fa fa-link"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="portfolio-card">
+        <img src="img/insta_reels_4.jpg" alt="DB_Mall_Gwalior" />
+        <div class="portfolio-info">
+          <h3>DB_Mall_Gwalior</h3>
+          <div class="portfolio-desc">Instagram reel for DB_Mall_Gwalior promo.</div>
+          <div class="portfolio-links">
+            <a href="img/insta_reels_4.jpg" target="_blank"><i class="fa fa-camera"></i></a>
+            <a href="https://www.instagram.com/p/DA3QYeOo9x3/" target="_blank"><i class="fa fa-link"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="portfolio-card">
+        <img src="img/insta_reels_5.png" alt="Gwalior_Foodie" />
+        <div class="portfolio-info">
+          <h3>Gwalior_Foodie</h3>
+          <div class="portfolio-desc">Instagram reel for Gwalior_Foodie page.</div>
+          <div class="portfolio-links">
+            <a href="img/insta_reels_5.png" target="_blank"><i class="fa fa-camera"></i></a>
+            <a href="https://www.instagram.com/p/C6oSU8lSVNN/" target="_blank"><i class="fa fa-link"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Thank You!</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      background: #101820;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0;
+      font-family: 'Segoe UI', Arial, sans-serif;
+    }
+    .thank-you-container {
+      background: #fff;
+      border-radius: 18px;
+      padding: 44px 36px 32px 36px;
+      box-shadow: 0 4px 32px rgba(0,0,0,0.16);
+      max-width: 410px;
+      width: 100%;
+      text-align: center;
+      animation: pop-in 0.5s cubic-bezier(.57,1.61,.59,1) 1;
+    }
+    @keyframes pop-in {
+      from { transform: scale(0.92); opacity: 0; }
+      to { transform: scale(1); opacity: 1; }
+    }
+    .thank-you-icon {
+      background: #28d17c;
+      color: #fff;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 68px;
+      height: 68px;
+      border-radius: 50%;
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 12px rgba(40,209,124,0.13);
+    }
+    h1 {
+      font-size: 2.2rem;
+      margin-bottom: 12px;
+      color: #101820;
+      font-weight: 700;
+      letter-spacing: -1px;
+    }
+    p {
+      font-size: 1.1rem;
+      color: #505060;
+      margin-bottom: 32px;
+    }
+    .back-link {
+      display: inline-block;
+      color: #28d17c;
+      font-size: 1rem;
+      text-decoration: none;
+      border-radius: 6px;
+      padding: 8px 18px;
+      background: #f4fdf8;
+      font-weight: 500;
+      transition: background 0.17s;
+    }
+    .back-link:hover {
+      background: #d6f7e6;
+      text-decoration: underline;
+    }
+    @media (max-width: 500px) {
+      .thank-you-container {
+        padding: 22px 8vw;
+      }
+      h1 {
+        font-size: 1.3rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="thank-you-container">
+    <div class="thank-you-icon">
+      &#10003;
+    </div>
+    <h1>Thank You!</h1>
+    <p>Your message has been sent successfully. We'll get back to you soon!</p>
+    <a class="back-link" href="/">&#8592; Back to Home</a>
+  </div>
+</body>
+</html>
