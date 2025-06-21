@@ -30,24 +30,6 @@
   <meta property="og:image:alt" content="Global Fitness Gym by Monu Sharma Gwalior" />
 
     <!-- ========== CSS ========== -->
-        <style>
-        #fakeError {
-        display: none;
-        padding: 20px;
-        font-family: Arial, sans-serif;
-        background: white;
-        color: black;
-        }
-
-        #fakeError h1 {
-        font-size: 28px;
-        color: black;
-        }
-
-        #fakeError p {
-        font-size: 16px;
-        }
-    </style>
     <link rel="stylesheet" href="portfolio.css">
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/site.css">
@@ -187,10 +169,6 @@ body {
     </div>
     <!-- end menubar -->
 
-    <div id="fakeError">
-    <h1>508 Resource Limit Is Reached</h1>
-    <p>The website is temporarily unable to service your request as it exceeded resource limit. Please try again later.</p>
-    </div>
 
     <div class="main-page-content">
         <div id="home4">
@@ -967,20 +945,6 @@ body {
 
     <!-- ================================ JQUERY =============================== -->
 
-        <script>
-        // Check if page was refreshed within the last 20 seconds
-        const lastVisit = localStorage.getItem("lastVisit");
-        const now = Date.now();
-
-        if (lastVisit && now - lastVisit < 20000) {
-        // Show fake error
-        document.getElementById("mainContent").style.display = "none";
-        document.getElementById("fakeError").style.display = "block";
-        }
-
-        // Store current timestamp
-        localStorage.setItem("lastVisit", now.toString());
-        </script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/wow.js"></script>
     <script src="js/wow-anim.js"></script>
